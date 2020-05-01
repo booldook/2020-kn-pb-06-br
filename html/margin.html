@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>margin을 알아보자</title>
+	<link rel="stylesheet" href="../css/base.css">
+	<style>
+		.wrapper {max-width: 1000px; margin: auto; border: 2px solid red;}
+		.box {height: 100px; background-color: blue; margin: 20px;}
+		.box1 {float: left; width: 300px;}
+	</style>
+</head>
+<body>
+	<!-- float 모델은 아래 위 마진이 상쇄되지 않는다. -->
+	<div class="wrapper clear">
+		<div class="box box1"></div>
+		<div class="box box1"></div>
+		<div class="box box1"></div>
+		<div class="box box1"></div>
+	</div>
+	<!-- block은 아래 위 마진이 겹친다.(하나의 마진만 남는다) -->
+	<div class="wrapper clear">
+		<div class="box box2"></div>
+		<div class="box box2"></div>
+		<div class="box box2"></div>
+		<div class="box box2"></div>
+	</div>
+</body>
+</html>
