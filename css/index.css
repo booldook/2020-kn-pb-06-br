@@ -32,6 +32,7 @@ body {font-family: 'Open Sans', sans-serif; height: 5000px;}
 /***************** about-wrap ****************/
 .persons {width: 101%; margin-left: -0.5%;}
 .person {width: 24%; margin: 0.5%; float: left;}
+.person > .photo > img {filter: grayscale(70%);}
 .person > .name {font-weight: 400; font-size: 24px; padding: 16px 0;}
 .person > .job {font-weight: 300; font-size: 16px; padding: 8px 0; color: #666;}
 .person > .desc {padding: 8px 0;}
