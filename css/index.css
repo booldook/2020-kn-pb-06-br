@@ -30,13 +30,17 @@ body {font-family: 'Open Sans', sans-serif; height: 5000px;}
 
 
 /***************** about-wrap ****************/
-.persons {width: 101%; margin-left: -0.5%;}
-.person {width: 24%; margin: 0.5%; float: left;}
-.person > .photo > img {filter: grayscale(70%);}
-.person > .name {font-weight: 400; font-size: 24px; padding: 16px 0;}
-.person > .job {font-weight: 300; font-size: 16px; padding: 8px 0; color: #666;}
-.person > .desc {padding: 8px 0;}
-.person > .bts {padding: 8px 0;}
+.persons {width: 101%; margin-left: -0.5%; margin-top: 40px;}
+.person {width: 24%; margin: 0.5%; float: left; border: 1px solid #eee; transition: all 0.75s;}
+.person > .photo {overflow: hidden;}
+.person > .photo > img {filter: grayscale(70%); transition: all 0.75s;}
+.person:hover {transform: translateY(-20px) scale(1.05); 
+	box-shadow: 0 12px 24px rgba(0,0,0, 0.4);}
+.person:hover > .photo > img {filter: grayscale(0); transform: scale(1.2) rotate(5deg);}
+.person > .name {font-weight: 400; font-size: 24px; padding: 16px 8px;}
+.person > .job {font-weight: 300; font-size: 16px; padding: 8px; color: #666;}
+.person > .desc {padding: 8px;}
+.person > .bts {padding: 8px;}
 .person > .bts > button {width: 100%; padding: 10px; border: none; background-color: #ddd; cursor: pointer; font-size: 16px;}
 .person > .bts > button:hover {background-color: #bbb;}
 
